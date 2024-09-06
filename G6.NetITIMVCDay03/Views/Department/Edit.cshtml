@@ -1,0 +1,25 @@
+﻿@model Department
+
+<div class="d-flex justify-content-center">
+    <h1>Edit Department</h1>
+</div>
+
+<br />
+<br />
+<br />
+
+<form action="~/Department/Edit" method="post">
+
+    <div class="form-group">
+        <input type="text" id="Id" name="Id" class="form-control" value="@Model.Id" hidden/>
+    </div>
+
+    <div class="form-group">
+        <label for="DeptName" class="form-label">Department Name</label>
+        <input type="text" id="DeptName" name="DeptName" class="form-control" value="@Model.DeptName" />
+    </div>
+
+    <input type="submit" value="Edit Department" class="btn btn-success my-5" />
+    <a href="~/Department/Index" class="btn btn-secondary">Cancel</a>
+
+</form>
